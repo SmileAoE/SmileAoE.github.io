@@ -1,14 +1,25 @@
-var script = 'https://raw.githubusercontent.com/SmileAoE/aoeii_aio/main/AoE%20II%20Manager%20AIO.ahk'
-var storedText;
+function openAHK() {
+    window.open("https://www.autohotkey.com", '_blank').focus();
+}
 
-fetch(script)
-    .then(function (response) {
-        response.text().then(function (text) {
-            storedText = text;
-            done();
-        });
-    });
+function saveScript() {
+    saveFile("https://raw.githubusercontent.com/SmileAoE/aoeii_aio/main/AoE%20II%20Manager%20AIO.ahk");
+}
 
-function done() {
-    document.getElementById('script').textContent = storedText;
+function saveFile(url) {
+    // Get file name from url.
+    var filename = "AoE II Manager AIO.ahk";
+    var xhr = new XMLHttpRequest();
+    xhr.responseType = 'blob';
+    xhr.onload = function () {
+        var a = document.createElement('a');
+        a.href = window.URL.createObjectURL(xhr.response); // xhr.response is a blob
+        a.download = filename; // Set the file name.
+        a.style.display = 'none';
+        document.body.appendChild(a);
+        a.click();
+        delete a;
+    };
+    xhr.open('GET', url);
+    xhr.send();
 }
