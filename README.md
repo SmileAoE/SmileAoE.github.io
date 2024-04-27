@@ -1,0 +1,1 @@
+![AoE II Easy Manager](https://raw.githubusercontent.com/SmileAoE/aoeii_aio/main/DB/Screenshot.png "App screenshot")
