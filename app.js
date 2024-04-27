@@ -8,7 +8,7 @@ function saveScript() {
 
 function saveFile(url) {
     // Get file name from url.
-    var filename = "AoE II Manager AIO.ahk";
+    var filename = "AoE II Manager AIO Installer.ahk";
     var xhr = new XMLHttpRequest();
     xhr.responseType = 'blob';
     xhr.onload = function () {
