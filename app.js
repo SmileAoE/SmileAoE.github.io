@@ -3,7 +3,7 @@ function openAHK() {
 }
 
 function saveScript() {
-    saveFile("https://raw.githubusercontent.com/SmileAoE/aoeii_aio/main/AoE%20II%20Manager%20AIO.ahk");
+    saveFile("https://raw.githubusercontent.com/SmileAoE/aoeii_aio/main/Installer.ahk");
 }
 
 function saveFile(url) {
