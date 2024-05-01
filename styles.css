@@ -36,7 +36,13 @@ body {
 }
 
 .btn:hover {
-    color: green;
+    color: white;
+    background-color: green;
+}
+
+.btn:active  {
+    color: yellow;
+    background-color: green;
 }
 
 .script {
