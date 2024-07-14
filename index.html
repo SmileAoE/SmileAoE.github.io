@@ -10,12 +10,114 @@
 </head>
 
 <body>
+    <h1 class="title">AoE II Easy Manager</h1>
+    
+	<!-- The dots/circles -->
+	<div class="slideshowcontrol-container" style="text-align:center">
+		<span class="appDot" onclick="currentSlide(1, 'app');"></span>
+		<span class="appDot" onclick="currentSlide(2, 'app');"></span>
+		<span class="appDot" onclick="currentSlide(3, 'app');"></span>
+		<span class="appDot" onclick="currentSlide(4, 'app');"></span>
+		<span class="appDot" onclick="currentSlide(5, 'app');"></span>
+		<span class="appDot" onclick="currentSlide(6, 'app');"></span>
+		<span class="appDot" onclick="currentSlide(7, 'app');"></span>
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick='oneplusSlides(-1, "app");'>&#10094;</a>
+		<a class="next" onclick='oneplusSlides(1, "app");'>&#10095;</a>
+	</div>
+	<br>
+	<!-- Slideshow container -->
+	<div class="slideshow-container">
+		<!-- Full-width images with number and caption text -->
+		<div class="app fade"><img src="app/dash.png" style="width:100%"></div>
+		<div class="app fade"><img src="app/game.png" style="width:100%"></div>
+		<div class="app fade"><img src="app/version.png" style="width:100%"></div>
+		<div class="app fade"><img src="app/fix.png" style="width:100%"></div>
+		<div class="app fade"><img src="app/language.png" style="width:100%"></div>
+		<div class="app fade"><img src="app/vm.png" style="width:100%"></div>
+		<div class="app fade"><img src="app/dm.png" style="width:100%"></div>
+	</div>
+	
+    <h2 class="using">3 Easy steps to use:</h2>
+	
+	<button class="btn" style="--clr:#39FF14" onclick="showStepsSlide('slideShowstepOne')"><span>1 - Download & Install AutoHotkey v2.0</span><i></i></button>
+	
+	<div class='slideShowstepOne'> 
+		<!-- The dots/circles -->
+		<div class="slideshowcontrol-container">
+			<span class="stepOneDot" onclick="currentSlide(1, 'stepOne');"></span>
+			<span class="stepOneDot" onclick="currentSlide(2, 'stepOne');"></span>
+			<span class="stepOneDot" onclick="currentSlide(3, 'stepOne');"></span>
+			<span class="stepOneDot" onclick="currentSlide(4, 'stepOne');"></span>
+			<span class="stepOneDot" onclick="currentSlide(5, 'stepOne');"></span>
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="oneplusSlides(-1, 'stepOne');">&#10094;</a>
+			<a class="next" onclick="oneplusSlides(1, 'stepOne');">&#10095;</a>
+		</div> 
+		<br>
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+			<!-- Full-width images with number and caption text -->
+			<div class="stepOne fade"><img src="steps/Step1_1.png" style="width:100%"></div>
+			<div class="stepOne fade"><img src="steps/Step1_2.png" style="width:100%"></div>
+			<div class="stepOne fade"><img src="steps/Step1_3.png" style="width:100%"></div>
+			<div class="stepOne fade"><img src="steps/Step1_4.png" style="width:100%"></div>
+			<div class="stepOne fade"><img src="steps/Step1_5.png" style="width:100%"></div>
+		</div>
+	</div>
+	
+	<button class="btn" style="--clr:#FF44CC" onclick="showStepsSlide('slideShowstepTwo')"><span>2 - Download the application script</span><i></i></button>
+	
+	<div class='slideShowstepTwo'> 
+		<!-- The dots/circles -->
+		<div class="slideshowcontrol-container" style="text-align:center">
+			<span class="stepTwoDot" onclick="currentSlide(1, 'stepTwo');"></span>
+			<span class="stepTwoDot" onclick="currentSlide(2, 'stepTwo');"></span>
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="oneplusSlides(-1, 'stepTwo');">&#10094;</a>
+			<a class="next" onclick="oneplusSlides(1, 'stepTwo');">&#10095;</a>
+		</div> 
+		<br>
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+			<!-- Full-width images with number and caption text -->
+			<div class="stepTwo fade"><img src="steps/Step2_1.png" style="width:100%"></div>
+			<div class="stepTwo fade"><img src="steps/Step2_2.png" style="width:100%"></div>
+		</div>
+		<br>
+	</div>
+	
+	<button class="btn" style="--clr:#0FF0FC" onclick='showStepsSlide("slideShowstepThree")'><span>3 - Launch the application script as an admin</span><i></i></button>
+	
+	<div class='slideShowstepThree'> 
+		<!-- The dots/circles -->
+		<div class="slideshowcontrol-container" style="text-align:center">
+			<span class="stepThreeDot" onclick="currentSlide(1, 'stepThree');"></span>
+			<span class="stepThreeDot" onclick="currentSlide(2, 'stepThree');"></span>
+			<span class="stepThreeDot" onclick="currentSlide(3, 'stepThree');"></span>
+			<span class="stepThreeDot" onclick="currentSlide(4, 'stepThree');"></span>
+			<span class="stepThreeDot" onclick="currentSlide(5, 'stepThree');"></span>
+			<span class="stepThreeDot" onclick="currentSlide(6, 'stepThree');"></span>
+			<span class="stepThreeDot" onclick="currentSlide(7, 'stepThree');"></span>
+			<span class="stepThreeDot" onclick="currentSlide(8, 'stepThree');"></span>
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="oneplusSlides(-1, 'stepThree');">&#10094;</a>
+			<a class="next" onclick="oneplusSlides(1, 'stepThree');">&#10095;</a>
+		</div> 
+		<br>
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+			<!-- Full-width images with number and caption text -->
+			<div class="stepThree fade"><img src="steps/Step3_1.png" style="width:100%"></div>
+			<div class="stepThree fade"><img src="steps/Step3_2.png" style="width:100%"></div>
+			<div class="stepThree fade"><img src="steps/Step3_3.png" style="width:100%"></div>
+			<div class="stepThree fade"><img src="steps/Step3_4.png" style="width:100%"></div>
+			<div class="stepThree fade"><img src="steps/Step3_5.png" style="width:100%"></div>
+			<div class="stepThree fade"><img src="steps/Step3_6.png" style="width:100%"></div>
+			<div class="stepThree fade"><img src="steps/Step3_7.png" style="width:100%"></div>
+			<div class="stepThree fade"><img src="steps/Step3_8.png" style="width:100%"></div>
+		</div>
+	</div>
     <script src="app.js"></script>
-    <h1 class="title">AoE II Easy Manager 2.4</h1>
-    <img class="preview"  src="https://raw.githubusercontent.com/SmileAoE/aoeii_aio/main/DB/Screenshot.png"></img>
-    <h2 class="using">How to use?</h2>
-    <button class="btn" onclick="openAHK()">1 - Download & Install AutoHotkey v2.0</button>
-    <button class="btn" onclick="saveScript()">2 - Download the application script</button>
-    <button class="btn">3 - Launch the application script as an administrator</button>
 </body>
 </html>
